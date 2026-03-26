@@ -1,39 +1,37 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets · Portfolio Valentin Vautier</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- IMPORTANT : même casse que tes dossiers -->
     <link rel="stylesheet" href="../CSS/commun.css" />
     <link rel="stylesheet" href="../CSS/projets.css" />
   </head>
-
   <body>
     <div class="background-glow"></div>
 
     <aside class="sidebar">
       <button class="sidebar__toggle" aria-label="Ouvrir ou fermer le menu">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div class="sidebar__inner">
         <div class="profile">
           <div class="avatar" aria-hidden="true">VV</div>
           <h1>Valentin Vautier</h1>
-          <p class="subtitle">BTS SIO · Option Réseaux</p>
+          <p class="subtitle">BTS SIO · Option SISR · Session 2026</p>
         </div>
 
         <nav class="sidebar__nav" aria-label="Navigation principale">
-          <a href="../index.html" class="nav-link active">Accueil</a>
+          <a href="../index.html" class="nav-link">Accueil</a>
           <a href="a-propos.html" class="nav-link">À propos</a>
           <a href="parcours.html" class="nav-link">Parcours</a>
           <a href="competences.html" class="nav-link">Compétences</a>
@@ -52,19 +50,18 @@
     <main class="content">
       <section id="projects" class="section projects">
         <div class="section__header">
-          <!-- IDs attendus par projets.js -->
-          <h2 id="bloc-title">Chargement...</h2>
-          <p id="bloc-description"></p>
+          <h2 id="bloc-title">Chargement des réalisations</h2>
+          <p id="bloc-description">
+            Les projets associés à ce bloc présentent les réalisations
+            techniques, le contexte de travail et les compétences mobilisées.
+          </p>
         </div>
 
-        <!-- ID attendu par projets.js -->
         <div class="projects__grid" id="projects-container"></div>
       </section>
     </main>
 
-    <!-- IMPORTANT : charger projets.js AVANT script.js -->
     <script src="../JS/projets.js"></script>
     <script src="../JS/script.js"></script>
   </body>
 </html>
-

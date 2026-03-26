@@ -64,9 +64,11 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--accent);
+  font-weight: 700;
 }
 
 .skill-card h3 {
+  font-family: var(--font-heading);
   font-size: 1.1rem;
 }
 

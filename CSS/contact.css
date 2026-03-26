@@ -8,6 +8,14 @@
   position: relative;
   z-index: 1;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.contact__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--border-strong);
 }
 
 .contact__card p {
@@ -32,11 +40,12 @@
 .contact__details a {
   color: var(--text-primary);
   text-decoration: none;
+  transition: color var(--transition);
 }
 
 .contact__details a:hover,
 .contact__details a:focus-visible {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
 .contact__actions {

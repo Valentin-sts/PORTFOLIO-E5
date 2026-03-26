@@ -55,6 +55,14 @@
   display: grid;
   gap: 8px;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.timeline-item__body:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--border-strong);
 }
 
 .timeline-item--accordion .timeline-item__body {

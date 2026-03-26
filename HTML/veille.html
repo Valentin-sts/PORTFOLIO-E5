@@ -1,21 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veille technologique · Portfolio Valentin Vautier</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="../CSS/commun.css" />
     <link rel="stylesheet" href="../CSS/veille.css" />
   </head>
-
   <body>
     <div class="background-glow"></div>
 
@@ -30,7 +27,7 @@
         <div class="profile">
           <div class="avatar" aria-hidden="true">VV</div>
           <h1>Valentin Vautier</h1>
-          <p class="subtitle">BTS SIO · Option Réseaux</p>
+          <p class="subtitle">BTS SIO · Option SISR · Session 2026</p>
         </div>
 
         <nav class="sidebar__nav" aria-label="Navigation principale">
@@ -44,7 +41,7 @@
         </nav>
 
         <footer class="sidebar__footer">
-          <span class="status-dot"></span>
+          <span class="status-dot" aria-hidden="true"></span>
           <span>Disponible pour de nouveaux défis cybersécurité</span>
         </footer>
       </div>
@@ -55,11 +52,11 @@
         <div class="section__header">
           <h2>Veille technologique</h2>
           <p>
-            Je réalise une veille régulière en réseaux et cybersécurité pour rester informé et anticiper les menaces.
+            Une veille régulière pour suivre les évolutions en cybersécurité,
+            infrastructures et usages techniques qui influencent mon parcours.
           </p>
         </div>
 
-        <!-- MÉTHODOLOGIE -->
         <article class="watch__method">
           <h3>Méthodologie</h3>
 
@@ -68,54 +65,45 @@
               <h4>Thématiques</h4>
               <ul>
                 <li>Cybersécurité</li>
-                <li>Réseaux & systèmes</li>
+                <li>Réseaux et systèmes</li>
                 <li>Intelligence artificielle</li>
-                <li>Actualités & nouveaux logiciels</li>
+                <li>Outils et actualités techniques</li>
               </ul>
             </div>
 
             <div>
               <h4>Sources</h4>
               <ul>
-                <li>ANSSI / CERT-FR</li>
-                <li>Le Monde</li>
-                <li>IT-CONNECT</li>
-                <li>Le site de Korben</li>
+                <li>ANSSI et CERT-FR</li>
+                <li>IT-Connect</li>
+                <li>Presse spécialisée et généraliste</li>
+                <li>Éditeurs et acteurs du secteur</li>
               </ul>
             </div>
 
             <div>
               <h4>Organisation</h4>
               <ul>
-                <li>Fréquence : hebdomadaire</li>
-                <li>Analyse critique des sources</li>
-                <li>Synthèse opérationnelle</li>
+                <li>Suivi hebdomadaire</li>
+                <li>Analyse critique des informations</li>
+                <li>Synthèse orientée usage professionnel</li>
               </ul>
             </div>
           </div>
         </article>
 
-        <!-- EXEMPLES -->
         <div class="watch__examples">
-
-          <!-- Exemple 1 : Cyberattaque Ministère de l’Intérieur -->
           <article class="watch__card">
             <header class="watch__card-top">
               <div>
-                <h3>Cyberattaque contre le Ministère de l’Intérieur</h3>
+                <h3>Cyberattaque contre le Ministère de l'Intérieur</h3>
                 <p class="watch__meta">
                   Décembre 2025 ·
-                  <a href="https://www.lemonde.fr/societe/article/2025/12/17/cyberattaque-contre-le-ministere-de-l-interieur_6658320_3224.html" target="_blank" rel="LeMonde">
-                    Le Monde 
-                  </a>
+                  <a href="https://www.lemonde.fr/societe/article/2025/12/17/cyberattaque-contre-le-ministere-de-l-interieur_6658320_3224.html" target="_blank" rel="noreferrer">Le Monde</a>
                   ·
-                  <a href="https://www.it-connect.fr/cyberattaque-ministere-de-linterieur-les-pirates-ont-bien-eu-acces-a-des-fichiers-importants/" target="_blank" rel="IT-CONNECT">
-                    IT-CONNECT
-                  </a>
+                  <a href="https://www.it-connect.fr/cyberattaque-ministere-de-linterieur-les-pirates-ont-bien-eu-acces-a-des-fichiers-importants/" target="_blank" rel="noreferrer">IT-Connect</a>
                   ·
-                  <a href="https://www.lefigaro.fr/secteur/high-tech/piratage-du-ministere-de-l-interieur-un-suspect-de-22-ans-interpelle-a-limoges-20251217" target="_blank" rel="LeFigaro">
-                    Le Figaro
-                  </a>
+                  <a href="https://www.lefigaro.fr/secteur/high-tech/piratage-du-ministere-de-l-interieur-un-suspect-de-22-ans-interpelle-a-limoges-20251217" target="_blank" rel="noreferrer">Le Figaro</a>
                 </p>
               </div>
             </header>
@@ -124,130 +112,114 @@
               <div>
                 <h4>Contexte</h4>
                 <p>
-                  Une intrusion a été détectée sur les serveurs de messagerie du Ministère de l’Intérieur.
-                  Les attaquants ont obtenu un accès non autorisé à certains fichiers internes,
-                  dont des données sensibles utilisées par les forces de l’ordre.
+                  Une intrusion a visé des serveurs de messagerie du Ministère
+                  de l'Intérieur, avec accès non autorisé à des fichiers
+                  sensibles utilisés dans un contexte opérationnel.
                 </p>
               </div>
 
               <div>
                 <h4>Synthèse</h4>
                 <ul>
-                  <li>Vecteur : compromission de comptes e-mail</li>
-                  <li>Systèmes concernés : messagerie et plateformes internes</li>
-                  <li>Données : fichiers professionnels sensibles (TAJ, FPR mentionnés)</li>
-                  <li>Enquêtes judiciaire et administrative ouvertes</li>
+                  <li>Compromission initiale via des comptes de messagerie</li>
+                  <li>Exposition de plateformes et fichiers internes</li>
+                  <li>Ouverture d'enquêtes technique et judiciaire</li>
                 </ul>
               </div>
 
               <div>
                 <h4>Impact</h4>
                 <ul>
-                  <li>Risque de violation de données confidentielles</li>
-                  <li>Atteinte à la confiance dans les systèmes d’État</li>
-                  <li>Conséquences potentielles sur les opérations policières</li>
+                  <li>Risque de fuite d'informations sensibles</li>
+                  <li>Atteinte à la confiance dans les systèmes institutionnels</li>
+                  <li>Conséquences possibles sur les opérations métiers</li>
                 </ul>
               </div>
 
               <div>
                 <h4>Recommandations</h4>
                 <ul>
-                  <li>Imposer l’authentification multifacteur</li>
-                  <li>Rotation des mots de passe et audit des accès</li>
-                  <li>Renforcer la supervision (SIEM, logs)</li>
+                  <li>Imposer la MFA sur les accès critiques</li>
+                  <li>Renforcer les audits de comptes et de droits</li>
+                  <li>Améliorer la supervision et la journalisation</li>
                 </ul>
               </div>
             </div>
 
             <div class="watch__learn">
-              <h4>Ce que j’ai retenu </h4>
+              <h4>Ce que j'en retiens</h4>
               <p>
-                Une compromission e-mail peut être un point d’entrée critique.
-                La mise en place du MFA, la surveillance des connexions et la gestion rigoureuse
-                des identités sont essentielles pour limiter l’impact d’une attaque.
+                Les identités et la messagerie restent des points d'entrée
+                majeurs. La MFA, la surveillance des connexions et la gestion
+                des accès sont des leviers essentiels pour réduire l'impact
+                d'une compromission.
               </p>
             </div>
           </article>
 
-          <!-- Exemple 2 — Intelligence artificielle et impact sur l’IT -->
-<article class="watch__card">
-  <header class="watch__card-top">
-    <div>
-      <h3>Intelligence artificielle : impact sur les métiers IT et évolutions futures</h3>
-      <p class="watch__meta">
-        2024–2025 ·
-        <a href="https://www.fortinet.com/fr/resources/cyberglossary/artificial-intelligence-in-cybersecurity" target="_blank" rel="FORTINET">
-          FORTINET
-        </a>
-        ·
-        <a href="https://news.microsoft.com/source/emea/2025/11/microsoft-lia-en-france-une-ambition-collective-des-resultats-concrets/?lang=fr" target="_blank" rel="Microsoft">
-          Microsoft
-        </a>
-        ·
-        <a href="https://lejournal.cnrs.fr/dossiers/comment-lintelligence-artificielle-va-changer-nos-vies" target="_blank" rel="CNRS">
-          Le Journal du CNRS
-        </a>
-        ·
-      </p>
-    </div>
-  </header>
+          <article class="watch__card">
+            <header class="watch__card-top">
+              <div>
+                <h3>Intelligence artificielle et évolution des métiers IT</h3>
+                <p class="watch__meta">
+                  2024 · 2025 ·
+                  <a href="https://www.fortinet.com/fr/resources/cyberglossary/artificial-intelligence-in-cybersecurity" target="_blank" rel="noreferrer">Fortinet</a>
+                  ·
+                  <a href="https://news.microsoft.com/source/emea/2025/11/microsoft-lia-en-france-une-ambition-collective-des-resultats-concrets/?lang=fr" target="_blank" rel="noreferrer">Microsoft</a>
+                  ·
+                  <a href="https://lejournal.cnrs.fr/dossiers/comment-lintelligence-artificielle-va-changer-nos-vies" target="_blank" rel="noreferrer">CNRS</a>
+                </p>
+              </div>
+            </header>
 
-  <div class="watch__card-grid">
-    <div>
-      <h4>Contexte</h4>
-      <p>
-        L’intelligence artificielle connaît une adoption rapide dans le domaine de l’IT.
-        Elle est utilisée pour automatiser des tâches, analyser de grands volumes de données
-        et améliorer la sécurité des systèmes d’information.
-        Les entreprises intègrent progressivement l’IA dans les réseaux, les systèmes et la cybersécurité.
-      </p>
-    </div>
+            <div class="watch__card-grid">
+              <div>
+                <h4>Contexte</h4>
+                <p>
+                  L'IA s'intègre progressivement aux outils d'administration,
+                  de supervision et de cybersécurité pour assister les équipes
+                  techniques dans l'analyse et l'automatisation.
+                </p>
+              </div>
 
-    <div>
-      <h4>Synthèse</h4>
-      <ul>
-        <li>Automatisation IT : supervision, détection d’incidents, tickets</li>
-        <li>Cybersécurité : détection d’anomalies, analyse comportementale, réponse aux incidents</li>
-        <li>Réseaux : optimisation des flux, détection d’attaques DDoS, auto-remédiation</li>
-        <li>Systèmes : aide à l’administration, scripts générés, diagnostic rapide</li>
-      </ul>
-    </div>
+              <div>
+                <h4>Synthèse</h4>
+                <ul>
+                  <li>Automatisation de tâches récurrentes et d'alertes</li>
+                  <li>Détection d'anomalies et amélioration de l'analyse</li>
+                  <li>Support à l'exploitation réseau, système et sécurité</li>
+                </ul>
+              </div>
 
-    <div>
-      <h4>Impact</h4>
-      <ul>
-        <li>Gain de temps pour les équipes IT et sécurité</li>
-        <li>Amélioration de la détection des menaces complexes</li>
-        <li>Réduction des erreurs humaines sur les tâches répétitives</li>
-        <li>Nouveaux risques : dépendance aux modèles, biais, attaques contre l’IA</li>
-      </ul>
-    </div>
+              <div>
+                <h4>Impact</h4>
+                <ul>
+                  <li>Gain de temps sur des tâches à faible valeur ajoutée</li>
+                  <li>Aide au diagnostic et à la priorisation</li>
+                  <li>Nouveaux enjeux de gouvernance, contrôle et sécurité</li>
+                </ul>
+              </div>
 
-    <div>
-      <h4>Évolutions futures</h4>
-      <ul>
-        <li>IA intégrée nativement aux outils IT et SOC</li>
-        <li>Automatisation avancée de la réponse aux incidents (SOAR + IA)</li>
-        <li>IA générative pour l’aide à l’administration et à la documentation</li>
-        <li>Renforcement des cadres de sécurité et de gouvernance de l’IA</li>
-      </ul>
-    </div>
-  </div>
+              <div>
+                <h4>Évolutions futures</h4>
+                <ul>
+                  <li>Intégration native dans les outils IT et SOC</li>
+                  <li>Automatisation plus avancée des réponses aux incidents</li>
+                  <li>Importance croissante du contrôle humain</li>
+                </ul>
+              </div>
+            </div>
 
-  <div class="watch__learn">
-    <h4>Ce que j’ai retenu</h4>
-    <p>
-      L’IA devient un véritable outil d’assistance pour les techniciens et administrateurs IT,
-      mais elle ne remplace pas l’expertise humaine.
-      Elle nécessite un cadre de sécurité, une supervision humaine et une bonne compréhension
-      des risques associés.
-      En tant que futur technicien réseau, comprendre l’IA est un atout pour anticiper
-      l’évolution des outils et des métiers.
-    </p>
-  </div>
-</article>
-
-
+            <div class="watch__learn">
+              <h4>Ce que j'en retiens</h4>
+              <p>
+                L'IA devient un accélérateur de productivité et d'analyse, mais
+                elle ne remplace pas l'expertise technique. Son usage demande un
+                cadre clair, une supervision humaine et une bonne maîtrise des
+                risques associés.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -255,4 +227,3 @@
     <script src="../JS/script.js"></script>
   </body>
 </html>
-

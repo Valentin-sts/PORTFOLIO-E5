@@ -50,6 +50,7 @@
 }
 
 .project-card__body h3 {
+  font-family: var(--font-heading);
   color: var(--text-primary);
   font-size: 1.2rem;
 }

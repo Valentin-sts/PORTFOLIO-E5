@@ -1,143 +1,62 @@
 .synthese-card {
-  background: #fff;
-  border: 1px solid rgba(24, 37, 54, 0.08);
-  border-radius: 22px;
-  padding: 28px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(21, 36, 56, 0.08);
+  border-radius: 24px;
+  padding: 30px;
   display: grid;
   gap: 14px;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.synthese-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--border-strong);
 }
 
 .synthese-card--downloads {
-  background: linear-gradient(
-      135deg,
-      rgba(31, 79, 214, 0.08),
-      rgba(14, 116, 144, 0.04)
-    ),
-    #fff;
-  border-color: rgba(31, 79, 214, 0.12);
+  position: relative;
+  z-index: 1;
+  background:
+    linear-gradient(135deg, rgba(15, 91, 216, 0.08), rgba(14, 116, 144, 0.04)),
+    rgba(255, 255, 255, 0.92);
 }
 
 .synthese-card h3 {
+  font-family: var(--font-heading);
   color: var(--text-primary);
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .synthese-card p {
   color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 60ch;
 }
 
 .synthese-card__eyebrow {
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .synthese-card__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  margin-top: 6px;
 }
 
-.synthese-card--downloads {
-  position: relative;
-  z-index: 1;
-}
-
-.print-only {
-  display: none;
-}
-
-.synthese-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.synthese-table th,
-.synthese-table td {
-  padding: 18px 20px;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
-}
-
-.synthese-table th {
-  position: sticky;
-  top: 0;
-  background: #f8fafc;
-  color: var(--text-primary);
-  font-size: 0.92rem;
-  font-weight: 600;
-  z-index: 1;
-}
-
-.synthese-table td {
-  color: var(--text-secondary);
-  line-height: 1.55;
-}
-
-.print-sheet {
-  padding: 32px;
-  background: #fff;
-}
-
-.print-sheet h1 {
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-  color: #182536;
-}
-
-@media print {
-  body {
-    background: #fff;
-  }
-
-  .background-glow,
-  .sidebar,
-  .section::after,
-  .section__header,
+@media (max-width: 640px) {
   .synthese-card {
-    display: none !important;
+    padding: 24px 22px;
   }
 
-  .content {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .section {
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-    background: #fff;
-    overflow: visible;
-  }
-
-  .print-only {
-    display: block;
-  }
-
-  .print-sheet {
-    padding: 0;
-  }
-
-  .synthese-table th,
-  .synthese-table td {
-    padding: 10px 12px;
-    border: 1px solid rgba(24, 37, 54, 0.16);
-    color: #182536;
-  }
-
-  .synthese-table th {
-    position: static;
-    background: #eef3f9;
-  }
-
-  @page {
-    size: A4 landscape;
-    margin: 12mm;
+  .synthese-card__actions {
+    flex-direction: column;
   }
 }
