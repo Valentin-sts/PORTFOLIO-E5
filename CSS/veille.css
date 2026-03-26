@@ -1,0 +1,124 @@
+﻿/* veille.css */
+
+/* ===== MÃ‰THODOLOGIE ===== */
+
+.watch__method,
+.watch__card {
+  border-radius: 22px;
+  padding: 2rem 2.25rem;
+  background: linear-gradient(145deg, #0f1835, #0b132a);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.watch__method {
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.watch__method h3 {
+  margin-bottom: 1rem;
+}
+
+.watch__method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.watch__method-grid h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.watch__method-grid p {
+  opacity: 0.9;
+}
+
+.watch__method-grid ul {
+  padding-left: 1.1rem;
+  margin: 0.25rem 0 0;
+}
+
+.watch__method-grid li {
+  margin-bottom: 0.35rem;
+  opacity: 0.9;
+}
+
+/* ===== CARTES DE VEILLE ===== */
+
+.watch__card {
+  margin-bottom: 2rem;
+}
+
+.watch__card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.watch__meta {
+  opacity: 0.85;
+  margin-top: 0.35rem;
+}
+
+.watch__meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Grille interne des cartes */
+.watch__card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.watch__card-grid h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.watch__card-grid p,
+.watch__card-grid li {
+  opacity: 0.9;
+}
+
+.watch__card-grid ul {
+  padding-left: 1.1rem;
+  margin: 0.25rem 0 0;
+}
+
+.watch__card-grid li {
+  margin-bottom: 0.35rem;
+}
+
+/* Bloc "Ce que jâ€™ai retenu / appliquÃ©" */
+.watch__learn {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.watch__learn h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .watch__method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .watch__card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .watch__method,
+  .watch__card {
+    padding: 1.5rem;
+  }
+}
