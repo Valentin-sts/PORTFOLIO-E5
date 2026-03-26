@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tableau de synthèse · Valentin Vautier</title>
+    <title>Tableau de synthese · Valentin Vautier</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +37,7 @@
           <a href="parcours.html" class="nav-link">Parcours</a>
           <a href="competences.html" class="nav-link">Compétences</a>
           <a href="certifications.html" class="nav-link">Certifications</a>
-          <a href="tableau-synthese.html" class="nav-link active">Tableau de synthèse</a>
+          <a href="tableau-synthese.html" class="nav-link active">Tableau de synthese</a>
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
@@ -51,138 +51,123 @@
     <main class="content">
       <section class="section synthese">
         <div class="section__header">
-          <h2>Tableau de synthèse E5</h2>
+          <h2>Tableau de synthese E5</h2>
           <p>
-            Visualisation directe des réalisations professionnelles et des blocs
-            de compétences mobilisés pendant le BTS SIO.
+            Télécharge le tableau de synthese au format Excel ou exporte une
+            version PDF prête à enregistrer.
           </p>
         </div>
 
-        <div class="synthese__grid">
-          <article class="synthese-card synthese-card--highlight">
-            <p class="synthese-card__eyebrow">Aperçu portfolio</p>
-            <h3>Lecture rapide du tableau</h3>
-            <p>
-              Cette page reprend le contenu du tableau E5 dans un format lisible
-              à l’écran. Le fichier Excel officiel reste disponible au besoin.
-            </p>
-            <div class="synthese-card__actions">
-              <a
-                class="btn primary"
-                href="../PROCEDURE/03-tableau-de-synthese-E5.xlsx"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ouvrir le tableau XLSX
-              </a>
-            </div>
-          </article>
+        <article class="synthese-card synthese-card--downloads">
+          <p class="synthese-card__eyebrow">Téléchargements</p>
+          <h3>Récupérer le tableau</h3>
+          <p>
+            Le tableau n'est plus affiché sur cette page. Utilise les boutons
+            ci-dessous pour télécharger le fichier Excel ou générer un PDF.
+          </p>
+          <div class="synthese-card__actions">
+            <a
+              class="btn primary"
+              href="../PROCEDURE/03-tableau-de-synthese-E5.xlsx"
+              download
+            >
+              Télécharger le tableau XLSX
+            </a>
+            <button class="btn ghost" type="button" id="download-pdf">
+              Télécharger en PDF
+            </button>
+          </div>
+        </article>
 
-          <article class="synthese-card synthese-card--meta">
-            <div class="synthese-meta">
-              <div>
-                <span class="synthese-meta__label">Étudiant</span>
-                <strong>Valentin Vautier</strong>
-              </div>
-              <div>
-                <span class="synthese-meta__label">Option</span>
-                <strong>SISR</strong>
-              </div>
-              <div>
-                <span class="synthese-meta__label">Session</span>
-                <strong>2026</strong>
-              </div>
-              <div>
-                <span class="synthese-meta__label">Portfolio</span>
-                <strong>http://localhost/E5/</strong>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="synthese-table-wrap">
-          <table class="synthese-table">
-            <thead>
-              <tr>
-                <th>Réalisation</th>
-                <th>Période</th>
-                <th>Blocs mobilisés</th>
-                <th>Documents associés</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mise en place d'un contrôleur de domaine Active Directory (AD DS)</td>
-                <td>04/11/24 au 29/11/24</td>
-                <td><span class="bloc-tag">B1</span></td>
-                <td><a href="../PROCEDURE/bloc1.pdf" target="_blank" rel="noreferrer">bloc1.pdf</a></td>
-              </tr>
-              <tr>
-                <td>Création du portfolio professionnel web</td>
-                <td>10/02/26 au 20/03/26</td>
-                <td><span class="bloc-tag">B3</span></td>
-                <td><a href="../index.html" target="_blank" rel="noreferrer">Portfolio HTML/CSS/JS</a></td>
-              </tr>
-              <tr>
-                <td>Veille technologique et développement professionnel</td>
-                <td>01/09/24 au 26/03/26</td>
-                <td><span class="bloc-tag">B6</span></td>
-                <td><a href="veille.html" target="_blank" rel="noreferrer">veille.html</a></td>
-              </tr>
-              <tr>
-                <td>Support utilisateurs et traitement de tickets</td>
-                <td>02/09/24 au 31/01/25</td>
-                <td><span class="bloc-tag">B2</span></td>
-                <td><a href="../PROCEDURE/bloc2.pdf" target="_blank" rel="noreferrer">bloc2.pdf</a></td>
-              </tr>
-              <tr>
-                <td>Gestion des comptes et des droits dans Active Directory</td>
-                <td>01/10/24 au 28/02/25</td>
-                <td>
-                  <span class="bloc-tag">B1</span>
-                  <span class="bloc-tag">B2</span>
-                </td>
-                <td><a href="../PROCEDURE/DROITS.xlsx" target="_blank" rel="noreferrer">DROITS.xlsx</a></td>
-              </tr>
-              <tr>
-                <td>Valorisation d'un projet technique Windows 11 sur LinkedIn</td>
-                <td>15/01/25 au 31/01/25</td>
-                <td><span class="bloc-tag">B3</span></td>
-                <td><a href="../PROCEDURE/poste.png" target="_blank" rel="noreferrer">poste.png</a></td>
-              </tr>
-              <tr>
-                <td>Participation à un projet réseau client : audit, besoins et schéma d'infrastructure</td>
-                <td>03/03/25 au 30/04/25</td>
-                <td><span class="bloc-tag">B4</span></td>
-                <td><a href="../PROCEDURE/Procédure - Gestion de projets clients complexe.pdf" target="_blank" rel="noreferrer">Procédure projet client</a></td>
-              </tr>
-              <tr>
-                <td>Déploiement d'un VPN IPsec FortiGate avec authentification AD/LDAP</td>
-                <td>01/09/25 au 31/10/25</td>
-                <td><span class="bloc-tag">B5</span></td>
-                <td><a href="../PROCEDURE/bloc5.pdf" target="_blank" rel="noreferrer">bloc5.pdf</a></td>
-              </tr>
-              <tr>
-                <td>Mise en place d'une double authentification avec Microsoft Authenticator</td>
-                <td>03/11/25 au 30/11/25</td>
-                <td><span class="bloc-tag">B5</span></td>
-                <td><a href="../PROCEDURE/bloc3.pdf" target="_blank" rel="noreferrer">bloc3.pdf</a></td>
-              </tr>
-              <tr>
-                <td>Accompagnement des utilisateurs à l'activation MFA et validation du service</td>
-                <td>01/12/25 au 19/12/25</td>
-                <td>
-                  <span class="bloc-tag">B2</span>
-                  <span class="bloc-tag">B5</span>
-                </td>
-                <td><a href="../PROCEDURE/bloc5.pdf" target="_blank" rel="noreferrer">bloc5.pdf</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="print-only" aria-hidden="true">
+          <div class="print-sheet">
+            <h1>Tableau de synthese E5</h1>
+            <table class="synthese-table synthese-table--print">
+              <thead>
+                <tr>
+                  <th>Réalisation</th>
+                  <th>Période</th>
+                  <th>Blocs mobilisés</th>
+                  <th>Documents associés</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mise en place d'un contrôleur de domaine Active Directory (AD DS)</td>
+                  <td>04/11/24 au 29/11/24</td>
+                  <td>B1</td>
+                  <td>bloc1.pdf</td>
+                </tr>
+                <tr>
+                  <td>Création du portfolio professionnel web</td>
+                  <td>10/02/26 au 20/03/26</td>
+                  <td>B3</td>
+                  <td>Portfolio HTML/CSS/JS</td>
+                </tr>
+                <tr>
+                  <td>Veille technologique et développement professionnel</td>
+                  <td>01/09/24 au 26/03/26</td>
+                  <td>B6</td>
+                  <td>veille.html</td>
+                </tr>
+                <tr>
+                  <td>Support utilisateurs et traitement de tickets</td>
+                  <td>02/09/24 au 31/01/25</td>
+                  <td>B2</td>
+                  <td>bloc2.pdf</td>
+                </tr>
+                <tr>
+                  <td>Gestion des comptes et des droits dans Active Directory</td>
+                  <td>01/10/24 au 28/02/25</td>
+                  <td>B1, B2</td>
+                  <td>DROITS.xlsx</td>
+                </tr>
+                <tr>
+                  <td>Valorisation d'un projet technique Windows 11 sur LinkedIn</td>
+                  <td>15/01/25 au 31/01/25</td>
+                  <td>B3</td>
+                  <td>poste.png</td>
+                </tr>
+                <tr>
+                  <td>Participation à un projet réseau client : audit, besoins et schéma d'infrastructure</td>
+                  <td>03/03/25 au 30/04/25</td>
+                  <td>B4</td>
+                  <td>Procédure projet client</td>
+                </tr>
+                <tr>
+                  <td>Déploiement d'un VPN IPsec FortiGate avec authentification AD/LDAP</td>
+                  <td>01/09/25 au 31/10/25</td>
+                  <td>B5</td>
+                  <td>bloc5.pdf</td>
+                </tr>
+                <tr>
+                  <td>Mise en place d'une double authentification avec Microsoft Authenticator</td>
+                  <td>03/11/25 au 30/11/25</td>
+                  <td>B5</td>
+                  <td>bloc3.pdf</td>
+                </tr>
+                <tr>
+                  <td>Accompagnement des utilisateurs à l'activation MFA et validation du service</td>
+                  <td>01/12/25 au 19/12/25</td>
+                  <td>B2, B5</td>
+                  <td>bloc5.pdf</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>
 
     <script src="../JS/script.js"></script>
+    <script>
+      const pdfButton = document.getElementById("download-pdf");
+
+      if (pdfButton) {
+        pdfButton.addEventListener("click", () => {
+          window.print();
+        });
+      }
+    </script>
   </body>
 </html>
