@@ -7,7 +7,7 @@
     "1": {
       title: "Bloc 1 – Gestion du patrimoine informatique",
       description: " ",
-      pdf: "../procedure/bloc1.pdf",
+      pdf: "../PROCEDURE/bloc1.pdf",
       projects: [
         {
           title: "Mise en place d’un contrôleur de domaine Active Directory (AD DS)",
@@ -33,7 +33,7 @@
       title: "Bloc 2 – Réponse aux incidents et assistance",
       description:
         "Support utilisateur et résolution d’incidents liés aux postes, au réseau et aux services.",
-      pdf: "../procedure/bloc2.pdf",
+      pdf: "../PROCEDURE/bloc2.pdf",
       projects: [
         {
           title: "Traitement des incidents utilisateurs",
@@ -47,7 +47,7 @@
           ],
           preuves: ["Ticket ou demande utilisateur", "Compte-rendu d’intervention"],
           file: {
-            href: "../procedure/bloc2.pdf",
+            href: "../PROCEDURE/bloc2.pdf",
             label: "Ouvrir la procédure (PDF)"
           }
         },
@@ -74,7 +74,7 @@
           ],
           preuves: ["Capture AD (comptes / groupes)", "Procédure de création de compte"],
           file: {
-            href: "../procedure/DROITS.xlsx",
+            href: "../PROCEDURE/DROITS.xlsx",
             label: "Ouvrir le fichier (XLSX)"
           }
         }
@@ -97,7 +97,7 @@
         "Contribution à l’image et à la visibilité numérique de l’entreprise"
       ],
       file: {
-        href: "../procedure/poste.png",
+        href: "../PROCEDURE/poste.png",
         label: "Voir la photo du projet"
       }
     }
@@ -110,7 +110,7 @@
       title: "Bloc 4 – Travail en mode projet",
       description:
         "Participation à un projet réseau en suivant les différentes étapes.",
-      pdf: "../procedure/bloc4.pdf",
+      pdf: "../PROCEDURE/bloc4.pdf",
       projects: [
         {
           title: "Participation à un projet réseau",
@@ -130,7 +130,7 @@
       title: "Bloc 5 – Mise à disposition d’un service",
       description:
         "Déploiement d’un service VPN IPsec sécurisé avec authentification AD/LDAP et authentification multifacteur.",
-      pdf: "../procedure/bloc5.pdf",
+      pdf: "../PROCEDURE/bloc5.pdf",
       projects: [
         {
           title: "VPN IPsec + Double Authentification (FortiGate & Microsoft 365)",
@@ -146,7 +146,7 @@
             "Tests de connexion et validation"
           ],
           file: {
-            href: "../procedure/bloc3.pdf",
+            href: "../PROCEDURE/bloc3.pdf",
             label: "Ouvrir la procédure MFA (PDF)"
           }
         }
@@ -159,7 +159,7 @@
       title: "Bloc 6 – Développement professionnel",
       description:
         "Veille technologique et amélioration continue.",
-      pdf: "../procedure/bloc6.pdf",
+      pdf: "../PROCEDURE/bloc6.pdf",
       projects: [
         {
           title: "Veille technologique & développement professionnel",
