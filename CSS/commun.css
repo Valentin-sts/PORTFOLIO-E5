@@ -203,7 +203,7 @@ body {
   display: none;
 }
 
-.status-dot {
+. {
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -495,7 +495,7 @@ body[data-theme="dark"] .theme-toggle__dot {
     font-size: 0.92rem;
   }
 
-  .sidebar__footer .status-dot,
+  .sidebar__footer .,
   .sidebar__footer span:last-child {
     display: none;
   }
@@ -577,7 +577,7 @@ body[data-theme="dark"] .theme-toggle__dot {
     justify-self: start;
   }
 
-  .sidebar__footer .status-dot,
+  .sidebar__footer .,
   .sidebar__footer span:last-child {
     display: inline-flex;
   }

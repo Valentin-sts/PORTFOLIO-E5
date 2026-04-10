@@ -78,16 +78,16 @@ function renderThemeToggleLabel(button, theme) {
 }
 
 function ensureThemeToggle() {
-  const footer = document.querySelector(".sidebar__footer");
-  if (!footer) return;
+  const container = document.querySelector(".sidebar__actions");
+  if (!container) return;
 
-  let themeToggle = footer.querySelector(".theme-toggle");
+  let themeToggle = container.querySelector(".theme-toggle");
 
   if (!themeToggle) {
     themeToggle = document.createElement("button");
     themeToggle.type = "button";
     themeToggle.className = "theme-toggle";
-    footer.prepend(themeToggle);
+    container.prepend(themeToggle);
   }
 
   const initialTheme = getPreferredTheme();
