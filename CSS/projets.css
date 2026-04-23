@@ -44,15 +44,23 @@
 
 .project-card__body {
   padding: 24px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   color: var(--text-secondary);
+  flex: 1;
 }
 
 .project-card__body h3 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   font-size: 1.2rem;
+}
+
+.btn-wrapper {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(24, 37, 54, 0.08);
 }
 
 .project-card.placeholder {
