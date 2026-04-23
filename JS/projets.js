@@ -39,7 +39,7 @@
             "Sauvegarde de la configuration (smb.conf, base des utilisateurs)"
           ],
           file: {
-            href: "../PROCEDURE/samba-linux.pdf",
+            href: "../PROCEDURE/Procedure_SAMBA_LINUX.pdf",
             label: "Consulter la procédure SAMBA (PDF)"
           }
         }
@@ -65,8 +65,8 @@
           preuves: ["Ticket ou demande utilisateur", "Compte-rendu d'intervention"],
           file: {
             href: "../PROCEDURE/bloc2.pdf",
-            label: "Consulter la procédure (PDF)"
-          }
+            label: "Consulter la procédure de gestion des tickets (PDF)"
+          } 
         },
         {
           title: "Dépannage réseau",
@@ -91,8 +91,8 @@
           ],
           preuves: ["Capture AD (comptes / groupes)", "Procédure de création de compte"],
           file: {
-            href: "../PROCEDURE/DROITS.xlsx",
-            label: "Consulter le fichier des droits (XLSX)"
+            href: "../PROCEDURE/DROITS.pdf",
+            label: "Consulter le fichier des droits NTFS (PDF)"
           }
         }
       ]
@@ -176,7 +176,7 @@
           ],
           file: {
             href: "../PROCEDURE/bloc3.pdf",
-            label: "Consulter la procédure MFA (PDF)"
+            label: "Consulter la procédure d’authentification à deux facteurs (PDF)"
           }
         },
         {
