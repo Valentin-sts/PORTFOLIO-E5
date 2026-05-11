@@ -50,7 +50,6 @@
       title: "Bloc 2 – Réponse aux incidents et assistance",
       description:
         "Support utilisateur et résolution d'incidents liés aux postes, au réseau et aux services.",
-      pdf: "../PROCEDURE/bloc2.pdf",
       projects: [
         {
           title: "Traitement des incidents utilisateurs",
@@ -62,37 +61,24 @@
             "Validation avec l'utilisateur",
             "Création d'un bon d'intervention détaillant les actions réalisées lors de l'intervention"
           ],
-          preuves: ["Ticket ou demande utilisateur", "Compte-rendu d'intervention"],
           file: {
             href: "../PROCEDURE/bloc2.pdf",
             label: "Consulter la procédure de gestion des tickets (PDF)"
-          } 
+          }
         },
         {
-          title: "Dépannage réseau",
+          title: "Gestion des droits utilisateurs",
           description:
-            "Résolution des problèmes de connectivité et d'accès aux ressources.",
+            "Refonte des droits d'accès via une organisation par groupes de sécurité.",
           items: [
-            "Vérification de la connexion (Wi-Fi / IP)",
-            "Tests réseau de base (ping, accès partages)",
-            "Correction de la configuration",
-            "Validation du fonctionnement"
+            "Audit des droits existants",
+            "Création des groupes de sécurité",
+            "Affectation des utilisateurs aux groupes",
+            "Attribution des groupes aux dossiers"
           ],
-          preuves: ["Capture des tests réseau", "Accès rétabli aux ressources"]
-        },
-        {
-          title: "Gestion des comptes utilisateurs",
-          description:
-            "Création et gestion de comptes et droits dans Active Directory.",
-          items: [
-            "Création et modification de comptes",
-            "Réinitialisation de mots de passe",
-            "Gestion des groupes et droits d'accès"
-          ],
-          preuves: ["Capture AD (comptes / groupes)", "Procédure de création de compte"],
           file: {
             href: "../PROCEDURE/DROITS.pdf",
-            label: "Consulter le fichier des droits NTFS (PDF)"
+            label: "Consulter la procédure de gestion des droits utilisateurs (PDF)"
           }
         }
       ]
@@ -101,7 +87,7 @@
     "3": {
       title: "Bloc 3 – Développement de la présence en ligne",
       description:
-        "Participation à la valorisation de l'image de l'organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques.",
+        "Participation à la valorisation de l'image de l'organisation sur les médias numériques en tenant compte du cadre juridique.",
       projects: [
         {
           title: "Valorisation d'un projet technique sur LinkedIn (DALTONER)",
@@ -125,7 +111,6 @@
       title: "Bloc 4 – Travail en mode projet",
       description:
         "Participation à un projet réseau en suivant les différentes étapes.",
-      pdf: "../PROCEDURE/bloc4.pdf",
       projects: [
         {
           title: "Participation à un projet réseau",
@@ -136,26 +121,42 @@
             "Réalisation d'un audit technique",
             "Concertation interne et conception de la solution",
             "Réalisation du schéma d'infrastructure (avant / après) et validation client"
-          ]
+          ],
+          file: {
+            href: "../PROCEDURE/bloc4.pdf",
+            label: "Consulter la procédure du projet réseau (PDF)"
+          }
+        },
+        {
+          title: "Rédaction d'une procédure interne",
+          description:
+            "Rédaction d'une procédure technique destinée à l'équipe interne, afin de standardiser une intervention et faciliter sa reproduction.",
+          items: [
+            "Identification du besoin et du périmètre de la procédure",
+            "Rédaction des étapes de manière claire et structurée",
+            "Mise en forme et relecture pour l'équipe",
+            "Dépôt et mise à disposition en interne"
+          ],
+          file: {
+            href: "../PROCEDURE/bloc3.pdf",
+            label: "Consulter la procédure interne (PDF)"
+          }
         }
       ]
     },
 
     "5": {
       title: "Bloc 5 – Mise à disposition d'un service",
-
       projects: [
         {
           title: "Configuration d'un VPN IPsec sur FortiGate",
           description:
-            "Mise en place d'un accès distant sécurisé via un tunnel VPN IPsec configuré sur un pare-feu FortiGate, " +
-            "avec intégration de l'annuaire Active Directory pour la gestion centralisée des accès.",
+            "Mise en place d'un accès distant sécurisé via un tunnel VPN IPsec sur FortiGate, avec authentification centralisée via Active Directory.",
           items: [
             "Configuration du tunnel VPN IPsec sur FortiGate",
-            "Intégration AD/LDAP pour l'authentification des utilisateurs",
-            "Définition des politiques de sécurité et des règles de pare-feu",
-            "Tests de connexion depuis un poste client externe",
-            "Validation du tunnel et des accès aux ressources internes"
+            "Intégration AD/LDAP pour l'authentification",
+            "Définition des politiques de sécurité et règles pare-feu",
+            "Tests et validation des accès depuis un poste externe"
           ],
           file: {
             href: "../PROCEDURE/bloc5.pdf",
@@ -165,32 +166,27 @@
         {
           title: "Mise en place d'une authentification multi-facteurs (MFA)",
           description:
-            "Renforcement de la sécurité des accès via la mise en place d'une authentification multifacteur sur Microsoft 365, " +
-            "combinant l'application Microsoft Authenticator et une méthode de secours physique.",
+            "Renforcement des accès Microsoft 365 via une MFA combinant Microsoft Authenticator et une méthode de secours physique.",
           items: [
-            "Activation de l'authentification multifacteur sur Microsoft 365",
+            "Activation de la MFA sur Microsoft 365",
             "Configuration de Microsoft Authenticator comme méthode principale",
-            "Ajout d'une méthode secondaire physique (clé de sécurité)",
-            "Accompagnement des utilisateurs à l'installation et au scan du QR Code",
-            "Tests de connexion et validation du service"
+            "Ajout d'une clé de sécurité physique en secours",
+            "Accompagnement des utilisateurs et validation du service"
           ],
           file: {
             href: "../PROCEDURE/bloc3.pdf",
-            label: "Consulter la procédure d’authentification à deux facteurs (PDF)"
+            label: "Consulter la procédure MFA (PDF)"
           }
         },
         {
           title: "Installation et administration d'un serveur DHCP Debian",
           description:
-            "Mise en place d'un serveur DHCP sous Debian afin d'automatiser l'attribution des adresses IP " +
-            "aux équipements du réseau et de centraliser la gestion des baux.",
+            "Déploiement d'un serveur DHCP sous Debian pour automatiser l'attribution des adresses IP et centraliser la gestion des baux.",
           items: [
-            "Installation du paquet isc-dhcp-server sur Debian",
-            "Configuration des plages d'adresses IP et des options réseau (passerelle, DNS, masque)",
-            "Définition des baux statiques pour les équipements fixes",
-            "Démarrage et activation du service au démarrage",
-            "Vérification de l'attribution des adresses sur les clients",
-            "Consultation des journaux et supervision des baux actifs"
+            "Installation et configuration d'isc-dhcp-server",
+            "Définition des plages IP, options réseau et baux statiques",
+            "Démarrage du service et vérification sur les clients",
+            "Supervision des baux actifs et consultation des journaux"
           ],
           file: {
             href: "../PROCEDURE/dhcp-debian.pdf",
@@ -204,7 +200,6 @@
       title: "Bloc 6 – Développement professionnel",
       description:
         "Veille technologique et amélioration continue.",
-      pdf: "../PROCEDURE/bloc6.pdf",
       projects: [
         {
           title: "Veille technologique & développement professionnel",
@@ -243,35 +238,12 @@
 
   blocData.projects.forEach((project) => {
 
-    const preuvesHtml =
-      Array.isArray(project.preuves) && project.preuves.length
-        ? `
-          <div style="margin-top:14px;">
-            <strong>Éléments de preuve :</strong>
-            <ul>
-              ${project.preuves.map(p => `<li>${p}</li>`).join("")}
-            </ul>
-          </div>
-        `
-        : "";
-
     const projectFileHtml =
       project.file && project.file.href
         ? `
           <div class="btn-wrapper">
             <a class="btn ghost" href="${project.file.href}" target="_blank">
               ${project.file.label}
-            </a>
-          </div>
-        `
-        : "";
-
-    const blocPdfHtml =
-      blocData.pdf && String(bloc) !== "2"
-        ? `
-          <div class="btn-wrapper">
-            <a class="btn ghost" href="${blocData.pdf}" target="_blank">
-              Consulter la procédure complète (PDF)
             </a>
           </div>
         `
@@ -285,9 +257,7 @@
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <ul>${project.items.map(i => `<li>${i}</li>`).join("")}</ul>
-        ${preuvesHtml}
         ${projectFileHtml}
-        ${blocPdfHtml}
       </div>
     `;
 
