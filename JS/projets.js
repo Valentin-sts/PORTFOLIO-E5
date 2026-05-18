@@ -164,6 +164,17 @@
             "Vérification sur les clients et supervision des baux actifs"
           ],
           file: { href: "../PROCEDURE/dhcp-debian.pdf", label: "Consulter la procédure DHCP Debian (PDF)" }
+        },
+        {
+          title: "Configuration Réseau : VLANs, DHCP, Routage, VTP et Sécurité",
+          description: "Mise en place d'une infrastructure réseau segmentée par VLANs avec routage inter-VLAN, attribution dynamique des adresses IP et sécurisation des équipements.",
+          items: [
+            "Création des VLANs et configuration du VTP (serveur/client) entre SW1 et SW2",
+            "Routage inter-VLAN via sous-interfaces dot1Q sur routeur Cisco",
+            "Configuration du DHCP par VLAN (ADMIN, TECH, COMMERCIAL)",
+            "Sécurisation des accès : console, VTY, SSH, enable secret et bannière"
+          ],
+          file: { href: "../PROCEDURE/Procédure de Configuration Réseau.pdf", label: "Consulter la procédure Configuration Réseau (PDF)" }
         }
       ]
     },
